@@ -1,5 +1,28 @@
-.App {
-  text-align: center;
+/* App클래스를 사용하는 요소들 모두*/
+.App { 
+  background-color: #222222;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 폰트 추가 */
+@font-face {
+  font-family: 'VCR_OSD_MONO';
+  src: url('fonts/VCR_OSD_MONO.ttf') format(truetype
+  );
+}
+
+/* App 클래스 안에 들어가는 텍스트*/
+.AppText {
+  font-family: 'VCR_OSD_MONO', sans-serif;
+  user-select: none; /* 드래그 방지 */
+  -webkit-user-select: none; /* Safari 드래그 방지 */
+  -moz-user-select: none; /* Firefox 드래그 방지 */
+  -ms-user-select: none; /* Internet Explorer/Edge 드래그  방지 */
+  cursor: pointer; /* 마우스 커서를 포인터(손가락)로 변경*/
 }
 
 .App-logo {
